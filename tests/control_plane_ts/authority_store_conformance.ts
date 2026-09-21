@@ -1,3 +1,4 @@
+import {registerIssueFixMonitorReconciliationConformance} from "./issue_fix_monitor_reconciliation_conformance.ts";
 import {registerTodoConsumerScopeConformance} from "./todo_consumer_scope_conformance.ts";
 import {registerProjectionConfirmationConformance} from "./projection_confirmation_conformance.ts";
 import {registerUserCompletionFollowthroughConformance} from "./user_completion_followthrough_conformance.ts";
@@ -257,6 +258,7 @@ export function registerAuthorityStoreConformance(
   registerMonitorConfigurationConformance(providerName, factory);
   registerLeasedMonitorConformance(providerName, factory);
   registerMonitorObservationUpdateConformance(providerName, factory);
+  registerIssueFixMonitorReconciliationConformance(providerName, factory);
   registerCoordinationReceiptConformance(providerName, factory);
   registerAuthoritySourceConformance(providerName, factory);
   registerHandoffModeConformance(providerName, factory);
